@@ -51,3 +51,14 @@ function imprimir(){
 }
 
 imprimir();
+
+//Arrays
+var nombres = ['Victor', 'Antonio', 'Joaquin'];
+
+document.write('<h1>LISTADO DE NOMBRES</h1>');
+
+//Mostrar array con bucle FOR
+
+for(i=0; i < nombres.length; i++){
+    document.write('<h2>' + nombres[i] + '</h2><br/>')
+}
