@@ -33,3 +33,21 @@ for (var i = 1992; i <= 2023; i++) {
     //bloque de instrucciones
     datos.innerHTML += "<h3>Estamos en el año " + i + "</h3>";
 }
+
+//funciones
+function MuestraMiNombre(nombre, altura){
+    var misDatos = `
+        <h1>Soy la caja de datos de la funcion MuestraMiNombre</h1>
+        <h2>Mi nombre es: ${nombre}</h2>
+        <h3>Mido: ${altura} cm</h3>
+    `;
+    return misDatos;
+}
+
+//funcion imprimir en un div con html
+function imprimir(){
+    var misdatos = document.getElementById("misdatos");
+    misdatos.innerHTML = MuestraMiNombre("Alex Villegas", 190);
+}
+
+imprimir();
