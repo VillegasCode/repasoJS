@@ -26,3 +26,10 @@ if(altura >= 180){
 } else {
     datos.innerHTML += '<h1>Eres una persona BAJA</h1>'
 }
+
+
+//BUCLE o ITERACIÓN
+for (var i = 1992; i <= 2023; i++) {
+    //bloque de instrucciones
+    datos.innerHTML += "<h3>Estamos en el año " + i + "</h3>";
+}
