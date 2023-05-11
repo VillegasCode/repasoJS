@@ -62,3 +62,8 @@ document.write('<h1>LISTADO DE NOMBRES</h1>');
 for(i=0; i < nombres.length; i++){
     document.write('<h2>' + nombres[i] + '</h2><br/>')
 }
+
+//Mostrar array con función anónima flecha
+nombres.forEach((nombre) => {
+    document.write(nombre + '<br/>');
+});
