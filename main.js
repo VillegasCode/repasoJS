@@ -1,4 +1,4 @@
-alert('Hola mundo desde el main.js');
+//alert('Hola mundo desde el main.js');
 
 //vatiables
 var nombre = "Alex Villegas";
@@ -58,12 +58,19 @@ var nombres = ['Victor', 'Antonio', 'Joaquin'];
 document.write('<h1>LISTADO DE NOMBRES</h1>');
 
 //Mostrar array con bucle FOR
-
+document.write('<h1>Array con for loop</h1>');
 for(i=0; i < nombres.length; i++){
-    document.write('<h2>' + nombres[i] + '</h2><br/>')
+    document.write(nombres[i] + '<br/>')
 }
 
 //Mostrar array con función anónima flecha
+document.write('<h1>Array con función flecha con forEach</h1>');
 nombres.forEach((nombre) => {
+    document.write(nombre + '<br/>');
+});
+
+//Mostrar el mismo array con un forEach
+document.write('<h1>Array con forEach + función anónima</h1>');
+nombres.forEach(function(nombre){
     document.write(nombre + '<br/>');
 });
