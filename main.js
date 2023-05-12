@@ -29,7 +29,7 @@ if(altura >= 180){
 
 
 //BUCLE o ITERACIÓN
-for (var i = 1992; i <= 2023; i++) {
+for (var i = 2014; i <= 2023; i++) {
     //bloque de instrucciones
     datos.innerHTML += "<h3>Estamos en el año " + i + "</h3>";
 }
@@ -74,3 +74,12 @@ document.write('<h1>Array con forEach + función anónima</h1>');
 nombres.forEach(function(nombre){
     document.write(nombre + '<br/>');
 });
+
+//OBJETOS
+var coche = {
+    marca: "Volkswagen",
+    modelo: "Jetta",
+    Maxima: 240,
+    Torque: 180,
+    Antiguedad: 2014,
+}
