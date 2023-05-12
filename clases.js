@@ -29,3 +29,17 @@ coche3.aumentarVelocidad();
 coche3.aumentarVelocidad();
 
 document.write("<h1>Aumentó su velocidad el " + coche3.modelo + " a " + coche3.velocidad + "</h1>");
+
+//HERENCIA DE OBJETOS (La clase Autobus hereda las propiedades de la clase Coche)
+class Autobus extends Coche {
+    constructor(modelo, velocidad, antiguedad, altura){
+        super(modelo, velocidad, antiguedad);
+        this.altura = altura;
+        this.capacidad = 50;
+    }
+
+}
+
+//Creando el objeto Autobus a partir de la clase heredada 
+var autobus1 = new Autobus('Mercedes', 240, 2019, 3.5);
+document.write("<h1>Capacidad del Bus es " + autobus1.capacidad + " en marca " + autobus1.modelo + " con altura de " + autobus1.altura + " metros</h1>");
