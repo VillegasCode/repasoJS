@@ -82,4 +82,18 @@ var coche = {
     Maxima: 240,
     Torque: 180,
     Antiguedad: 2014,
+
+//Añadir método
+    mostrarDatos(){
+        console.log(this.modelo, this.Maxima, this.Antiguedad);
+    },
+
+    color: "blanco",
+    ringnro: 17,
 }
+
+document.write("<h1> Marca: " + coche.marca + "</br> Modelo: " + coche.modelo + "</h1>");
+
+console.log("Torque: " + coche.Torque);
+
+coche.mostrarDatos();
